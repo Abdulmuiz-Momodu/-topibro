@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    color: hsl(224, 23%, 55%);
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background : url("images/pattern-background-desktop.svg"); 
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section {
+    display: flex;
+    height: 35rem;
+    width: 22rem;
+    background-color: #fff;
+    flex-direction: column;
+    border-radius: 12px;
+}
+
+h2, h4 {
+    font-weight: bold;
+    color: hsl(223, 47%, 23%);
+}
+
+.top {
+    height: 30%;
+}
+
+img {
+    height: 100%;
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 1.3rem;
+    height: 70%;
+}
+
+.bottom1 {
+    text-align: center;
+    font-size: initial;
+}
+
+.bottom2 {
+    background-color: hsl(225, 100%, 98%);
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.side {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    width: 55%;
+}
+
+.side img {
+    width: 35%;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.col h4, p {
+    margin: 0;
+}
+
+
+.button {
+    background-color: hsl(245, 75%, 52%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn {
+    font-family: 'Red Hat Display', sans-serif;
+    color: hsl(224, 23%, 55%);
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.5rem;
+    padding-top: 1.5rem;
+    font-weight: bold;
+}
+
+a {
+    color: hsl(245, 75%, 52%);
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgb(127, 86, 241);
+    text-decoration: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: rgb(127, 86, 241);
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: hsl(223, 47%, 23%);
+}
+
+@media screen and (max-width: 475px) {
+    body {
+        background: url(images/pattern-background-mobile.svg);
+        background-color: hsl(225, 100%, 94%);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

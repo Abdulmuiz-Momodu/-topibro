@@ -1,0 +1,56 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    padding: 10rem;
+    Font-size: 20px;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text {
+    display: flex;
+    gap: 2.5rem;
+}
+
+main {
+    display: grid;
+    grid-auto-columns: 33.33%;
+    grid-auto-rows: 20rem;
+    grid-template: 
+    'image image ABC'
+    'web web ABC';
+}
+
+.image {
+    grid-area: image;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+}
+
+.web {
+    grid-area: web;
+}
+
+.ABC {
+    grid-area: ABC;
+}
+

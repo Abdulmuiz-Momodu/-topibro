@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: hsl(228, 12%, 48%);
+}
+
+body {
+    background-color:  hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    font-size: 14px;
+}
+
+.h1 {
+    color: hsl(212, 21%, 14%);
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: xx-large;
+}
+
+p {
+    font-size: small;    
+    line-height: 1.5rem;
+}
+
+section {
+    background-color: #fff;
+    display: flex;
+    border-radius: 7px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+    height: 25rem;
+}
+
+.image {
+    background: url(images/image-product-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* width: 37.5rem;
+    height: 56.25rem; */
+}
+
+
+.top, .bottom, .image  {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+}
+
+.image {
+    border-radius: 7px 0 0 7px;
+    width: 100%;
+}
+ .bottom {
+    border-radius: 0 7px 7px 0 ;
+    justify-content: space-around;
+    padding: 17px;
+ }
+
+ .bottom p:first-child {
+    letter-spacing: 3px;
+ }
+
+ .button {
+    background-color: hsl(158, 36%, 37%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+    border-radius: 5px;
+    height: 2.5rem;
+ }
+
+ .button:hover {
+    cursor: pointer;
+    background-color: hsl(212, 21%, 14%);
+ }
+
+.amt {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+ .p {
+    color: #fff;
+ }
+
+ .h2 {
+    color: hsl(158, 36%, 37%);
+    /* font-weight: 500 ; */
+ }
+
+ .nO {
+    text-decoration: line-through;
+ }
+
+ @media screen and (max-width: 475px) {
+    .column {
+        width: 100%;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+        height: 35rem;
+    }
+
+    .image {
+        background: url(images/image-product-mobile.jpg);
+        background-size: cover;
+        border-radius: 7px 7px 0 0;
+    }   
+
+    .top, .bottom, .image  {
+        width: 100%;
+    }
+
+    .top {
+        height: 40%;
+    }
+
+    .bottom {
+        height: 60%;
+    }
+ }

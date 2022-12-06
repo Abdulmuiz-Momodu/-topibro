@@ -1,0 +1,9 @@
+body {
+    background-color: lightgreen;
+}
+
+@media only screen and (orientation: landspace) {
+    body {
+        background-color: lightblue;
+    }
+}

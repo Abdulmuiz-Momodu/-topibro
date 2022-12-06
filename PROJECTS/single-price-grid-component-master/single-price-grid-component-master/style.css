@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 12px;
+    width: 45rem;
+    height: 33rem;
+    /* padding: 3rem; */
+}
+
+.top {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    gap: 2rem;
+    padding: 3rem;
+}
+
+.top p {
+    color: hsl(218, 22%, 67%);
+}
+
+.bottom {
+    display: flex;
+    height: 50%;
+    width: 100%;
+    padding: 0;
+    /* border-radius: 0 0 12px 12px; */
+}
+
+.left {
+    background-color: hsl(179, 62%, 43%);
+    width: 50%;
+    padding: 3rem;
+    gap: 1rem;
+    border-radius: 0 0 0 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.left h3 {
+    color: #fff;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(179, 49%, 67%);
+    width: 50%;
+    padding: 2rem;
+    gap: 2rem;
+    border-radius: 0 0 12px 0;
+    color: hsl(204, 43%, 93%);
+}
+
+.left p {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.right h2 {
+    color: #fff;
+}
+
+ul {
+    list-style-type: none;
+}
+
+h2 {
+    color: hsl(179, 62%, 43%);
+}
+
+.top h4 {
+    color: hsl(71, 73%, 54%);
+}
+
+p {
+    color: hsl(204, 43%, 93%);
+}
+
+b {
+    font-size: xx-large;
+}
+
+.click {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 15px; */
+    background-color: hsl(71, 73%, 54%);
+    width: 15rem;
+    padding: 13px;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 0 hsl(218, 22%, 67%);
+    color: #fff;
+}
+
+@media screen and (max-width: 650px) {
+    
+    section {
+        display: flex;
+        flex-direction: column;
+        /* height: 100vh; */
+        height: 90%;
+        width: 85%;
+       
+    }
+
+    .top {
+        height: 40%;
+        width: 100%;
+    }
+
+    
+
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        height: 60%;
+        width: 100%;
+    }
+
+    .left {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .right {
+        width: 100%;
+        border-radius: 0 0 12px 12px;
+    }
+
+
+}

@@ -1,0 +1,33 @@
+h1 {
+    border-bottom: 18px dotted rgb(133, 11, 133);
+    font-size: 60px;
+    font-family: Georgia, serif;
+  }
+  body {
+    color: rgb(59, 57, 57);
+    font-family: serif;;
+  }
+
+  h2 {
+    color: grey;
+  }
+
+  h3 {
+      color: rgb(49, 46, 46);
+  }
+
+  div {
+    padding: 30px;
+    border: 5px solid purple;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    margin-right: 70px;
+    margin-left: 80px;
+    background-color: rgb(223, 236, 240);
+}
+
+p {color:forestgreen;}
+
+a {
+color: hotpink;
+}
